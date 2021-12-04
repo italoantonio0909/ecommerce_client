@@ -1,12 +1,13 @@
 import { NavLink } from 'react-router-dom'
 
 interface Props {
+  index: number
   image: string
   title: string
   description: string
 }
 
-const SliderDetail = function ({ image, title, description }: Props) {
+const SliderDetail = function ({ image, title, description, index }: Props) {
   return (
     <div className="item-slick1" style={{ backgroundImage: `url(${image})` }}>
       <div className="container h-full">
